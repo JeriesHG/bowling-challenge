@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="105c573a-ca09-4cd1-99c2-798d52145a31" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1XX9BMYyua8YhR8k4UGEbPHG6n1" />
+  <component name="PropertiesComponent">
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.jerieshandal.bowling" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jerieshandal.bowling.process" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\resources" />
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\java\com\jerieshandal\bowling\file" />
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test" />
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\main\resources" />
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\main\java\com\jerieshandal\bowling\pojo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.FileProcessorTest">
+    <configuration name="FileProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileProcessorTest.emptyFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
+      <option name="METHOD_NAME" value="emptyFileProcessed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileProcessorTest.invalidFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
+      <option name="METHOD_NAME" value="invalidFileProcessed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileProcessorTest.invalidParametersFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
+      <option name="METHOD_NAME" value="invalidParametersFileProcessed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileProcessorTest.successFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bowling-challenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
+      <option name="METHOD_NAME" value="successFileProcessed" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.FileProcessorTest.successFileProcessed" />
+      <item itemvalue="JUnit.FileProcessorTest.invalidFileProcessed" />
+      <item itemvalue="JUnit.FileProcessorTest.emptyFileProcessed" />
+      <item itemvalue="JUnit.FileProcessorTest.invalidParametersFileProcessed" />
+      <item itemvalue="JUnit.FileProcessorTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FileProcessorTest" />
+        <item itemvalue="JUnit.FileProcessorTest.invalidParametersFileProcessed" />
+        <item itemvalue="JUnit.FileProcessorTest.emptyFileProcessed" />
+        <item itemvalue="JUnit.FileProcessorTest.invalidFileProcessed" />
+        <item itemvalue="JUnit.FileProcessorTest.successFileProcessed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="105c573a-ca09-4cd1-99c2-798d52145a31" name="Default Changelist" comment="" />
+      <created>1581181436709</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581181436709</updated>
+    </task>
+    <servers />
+  </component>
+</project>

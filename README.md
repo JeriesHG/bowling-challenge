@@ -34,9 +34,9 @@ The application follows the standard maven project structure and uses the maven 
 
 1. Run `mvn clean package`, generating a valid jar called `bowling-challenge.jar`.
 2. Run `java -jar target/bowling-challenge.jar -f sample.txt`, replacing the sample.txt with the absolute path (`/User/YourUser/bowling-challenge/src/test/resources/files/sample.txt`) to the sample text files. You can find all the sample files used to test under `src/test/resources/files`. 
-* Expects one arguments: `-f or --file`. You can use `-h or -help` for a brief explanation of the commands. 
+* Expects one argument: `-f or --file`. You can use `-h or -help` for a brief explanation of the commands. 
 
-**Note: The text files must following the format given in the sample text files or as shown below**
+**Note: The text files must follow the format given in the sample text files or as shown below**
 ```
 Jeff	10
 Jeff	7

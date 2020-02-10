@@ -9,5 +9,5 @@ public interface OutputProcessor {
 
     List<Output> produceOutputLines(List<Player> players);
 
-    String printResult(List<Output> outputs);
+    String processOutputResult(List<Output> outputs);
 }

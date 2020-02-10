@@ -12,6 +12,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import static com.jerieshandal.bowling.util.Constants.BLANK;
+
 @Component
 public class OutputProcessorImpl implements OutputProcessor {
 
@@ -34,7 +36,9 @@ public class OutputProcessorImpl implements OutputProcessor {
     }
 
     @Override
-    public String printResult(List<Output> outputs) {
+    public String processOutputResult(List<Output> outputs) {
+        if (outputs.isEmpty()) return BLANK;
+
         StringBuilder builder = new StringBuilder("Frame\t\t");
         for (int i = 1; i < 11; i++) {
             builder.append(i).append("\t\t");
@@ -58,7 +62,6 @@ public class OutputProcessorImpl implements OutputProcessor {
             builder.append("\n");
         }
 
-        System.out.println(builder.toString());
         return builder.toString();
     }
 

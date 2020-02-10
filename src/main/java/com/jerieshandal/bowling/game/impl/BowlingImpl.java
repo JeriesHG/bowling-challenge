@@ -5,9 +5,8 @@ import com.jerieshandal.bowling.game.Bowling;
 import com.jerieshandal.bowling.pojo.Output;
 import com.jerieshandal.bowling.pojo.Player;
 import com.jerieshandal.bowling.pojo.Roll;
-import com.jerieshandal.bowling.process.PlayerProcessor;
 import com.jerieshandal.bowling.process.OutputProcessor;
-import org.apache.commons.cli.ParseException;
+import com.jerieshandal.bowling.process.PlayerProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -26,10 +25,10 @@ public class BowlingImpl implements Bowling {
     private OutputProcessor outputProcessor;
 
     @Override
-    public String produceScore(String filePath) throws IOException, ParseException {
+    public String processAndPrintScore(String filePath) throws IOException {
         Map<String, List<Roll>> processedFile = fileProcessor.process(filePath);
         List<Player> players = playerProcessor.retrievePlayers(processedFile);
         List<Output> outputs = outputProcessor.produceOutputLines(players);
-        return outputProcessor.printResult(outputs);
+        return outputProcessor.processOutputResult(outputs);
     }
 }

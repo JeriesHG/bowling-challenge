@@ -16,16 +16,23 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XX9BMYyua8YhR8k4UGEbPHG6n1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/files" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\resources\files" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.jerieshandal.bowling" />
     </key>
@@ -33,11 +40,11 @@
       <recent name="com.jerieshandal.bowling.process" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\resources\files" />
       <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\resources" />
       <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\java\com\jerieshandal\bowling\file" />
       <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test" />
       <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\main\resources" />
-      <recent name="C:\Users\Jeries\IdeaProjects\bowling-challenge\src\main\java\com\jerieshandal\bowling\pojo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -52,100 +59,99 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FileProcessorTest">
-    <configuration name="FileProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BowlingTest.twoPlayerBowlingGame">
+    <configuration name="BowlingChallengeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.BowlingChallengeApplication" />
       <module name="bowling-challenge" />
+      <option name="PROGRAM_PARAMETERS" value="-f C:\Users\Jeries\IdeaProjects\bowling-challenge\src\test\resources\files\sample.txt" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="PATTERN" value="com.jerieshandal.bowling.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
-      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileProcessorTest.emptyFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BowlingTest.fouledBowlingGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-challenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="PATTERN" value="com.jerieshandal.bowling.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
-      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
-      <option name="METHOD_NAME" value="emptyFileProcessed" />
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.game" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.game.BowlingTest" />
+      <option name="METHOD_NAME" value="fouledBowlingGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileProcessorTest.invalidFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BowlingTest.perfectBowlingGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-challenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="PATTERN" value="com.jerieshandal.bowling.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
-      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
-      <option name="METHOD_NAME" value="invalidFileProcessed" />
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.game" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.game.BowlingTest" />
+      <option name="METHOD_NAME" value="perfectBowlingGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileProcessorTest.invalidParametersFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BowlingTest.twoPlayerBowlingGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-challenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="PATTERN" value="com.jerieshandal.bowling.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
-      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
-      <option name="METHOD_NAME" value="invalidParametersFileProcessed" />
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.game" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.game.BowlingTest" />
+      <option name="METHOD_NAME" value="twoPlayerBowlingGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileProcessorTest.successFileProcessed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BowlingTest.zeroBowlingGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bowling-challenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jerieshandal.bowling.file.*" />
+          <option name="PATTERN" value="com.jerieshandal.bowling.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.file" />
-      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.file.FileProcessorTest" />
-      <option name="METHOD_NAME" value="successFileProcessed" />
+      <option name="PACKAGE_NAME" value="com.jerieshandal.bowling.game" />
+      <option name="MAIN_CLASS_NAME" value="com.jerieshandal.bowling.game.BowlingTest" />
+      <option name="METHOD_NAME" value="zeroBowlingGame" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FileProcessorTest.successFileProcessed" />
-      <item itemvalue="JUnit.FileProcessorTest.invalidFileProcessed" />
-      <item itemvalue="JUnit.FileProcessorTest.emptyFileProcessed" />
-      <item itemvalue="JUnit.FileProcessorTest.invalidParametersFileProcessed" />
-      <item itemvalue="JUnit.FileProcessorTest" />
+      <item itemvalue="Application.BowlingChallengeApplication" />
+      <item itemvalue="JUnit.BowlingTest.perfectBowlingGame" />
+      <item itemvalue="JUnit.BowlingTest.zeroBowlingGame" />
+      <item itemvalue="JUnit.BowlingTest.fouledBowlingGame" />
+      <item itemvalue="JUnit.BowlingTest.twoPlayerBowlingGame" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FileProcessorTest" />
-        <item itemvalue="JUnit.FileProcessorTest.invalidParametersFileProcessed" />
-        <item itemvalue="JUnit.FileProcessorTest.emptyFileProcessed" />
-        <item itemvalue="JUnit.FileProcessorTest.invalidFileProcessed" />
-        <item itemvalue="JUnit.FileProcessorTest.successFileProcessed" />
+        <item itemvalue="JUnit.BowlingTest.twoPlayerBowlingGame" />
+        <item itemvalue="JUnit.BowlingTest.fouledBowlingGame" />
+        <item itemvalue="JUnit.BowlingTest.zeroBowlingGame" />
+        <item itemvalue="JUnit.BowlingTest.perfectBowlingGame" />
+        <item itemvalue="Application.BowlingChallengeApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -161,5 +167,27 @@
       <updated>1581181436709</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/jerieshandal/bowling/game/BowlingTest.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

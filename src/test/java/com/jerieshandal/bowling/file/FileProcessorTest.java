@@ -18,14 +18,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @ActiveProfiles("test")
 @SpringBootTest(classes = TestApplicationConfiguration.class)
-public class FileProcessorTest {
+class FileProcessorTest {
 
     @Autowired
     private FileProcessor fileProcessor;
 
     @Test
     void successFileProcessed() throws IOException {
-        Path path = Paths.get("src", "test", "resources", "sample.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "sample.txt");
         Map<String, List<Roll>> processedInput = fileProcessor.process(path.toAbsolutePath().toString());
         assertEquals(2, processedInput.keySet().size());
         assertFalse(processedInput.values().isEmpty());
@@ -33,7 +33,7 @@ public class FileProcessorTest {
 
     @Test
     void invalidFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", randomAlphabetic(5) + ".txt");
+        Path path = Paths.get("src", "test", "resources", "files", randomAlphabetic(5) + ".txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException ex) {
@@ -43,14 +43,14 @@ public class FileProcessorTest {
 
     @Test
     void emptyFileProcessed() throws IOException {
-        Path path = Paths.get("src", "test", "resources", "empty.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "empty.txt");
         Map<String, List<Roll>> processedInput = fileProcessor.process(path.toAbsolutePath().toString());
         assertTrue(processedInput.values().isEmpty());
     }
 
     @Test
     void invalidReverseParametersFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-1.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-1.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {
@@ -60,7 +60,7 @@ public class FileProcessorTest {
 
     @Test
     void invalidNegativeParametersFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-2.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-2.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {
@@ -70,7 +70,7 @@ public class FileProcessorTest {
 
     @Test
     void invalidGreaterThan10ScoreFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-3.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-3.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {
@@ -80,7 +80,7 @@ public class FileProcessorTest {
 
     @Test
     void invalidLetterAsScoreFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-4.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-4.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {
@@ -90,7 +90,7 @@ public class FileProcessorTest {
 
     @Test
     void invalidSymbolAsScoreFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-5.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-5.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {
@@ -100,7 +100,7 @@ public class FileProcessorTest {
 
     @Test
     void threeColumnsFileProcessed() {
-        Path path = Paths.get("src", "test", "resources", "invalid-6.txt");
+        Path path = Paths.get("src", "test", "resources", "files", "invalid-6.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
         } catch (IOException | IllegalArgumentException ex) {

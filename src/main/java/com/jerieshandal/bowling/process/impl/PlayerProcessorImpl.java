@@ -30,7 +30,7 @@ public class PlayerProcessorImpl implements PlayerProcessor {
                 }
 
                 Roll firstRoll = getRoll(rolls, i);
-                if (firstRoll.getScore() == MAX_FRAMES) {
+                if (firstRoll.getScore() == 10) {
                     frames.add(Frame.of(firstRoll));
                     continue;
                 }

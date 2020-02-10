@@ -7,4 +7,5 @@ import lombok.NoArgsConstructor;
 public class Constants {
 
     public final static int MAX_FRAMES = 10;
+    public final static String BLANK = "";
 }

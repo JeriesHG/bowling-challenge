@@ -53,6 +53,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-1.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }
@@ -63,6 +64,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-2.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }
@@ -73,6 +75,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-3.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }
@@ -83,6 +86,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-4.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }
@@ -93,6 +97,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-5.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }
@@ -103,6 +108,7 @@ class FileProcessorTest {
         Path path = Paths.get("src", "test", "resources", "files", "invalid-6.txt");
         try {
             fileProcessor.process(path.toAbsolutePath().toString());
+            fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
             assertEquals("There's an invalid entry in the file!", ex.getMessage());
         }

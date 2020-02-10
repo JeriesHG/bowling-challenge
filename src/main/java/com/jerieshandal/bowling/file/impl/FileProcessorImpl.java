@@ -26,10 +26,10 @@ public class FileProcessorImpl implements FileProcessor {
             String[] splitRows = line.split("\t");
             if (!isValidInput(splitRows)) throw new IllegalArgumentException("There's an invalid entry in the file!");
 
-            String playerName = splitRows[1];
+            String playerName = splitRows[0];
             List<Roll> playerRolls = processedInput.get(playerName);
             if (playerRolls == null) playerRolls = new ArrayList<>();
-            playerRolls.add(Roll.of(splitRows[0]));
+            playerRolls.add(Roll.of(splitRows[1]));
 
             processedInput.put(playerName, playerRolls);
         }
@@ -40,7 +40,7 @@ public class FileProcessorImpl implements FileProcessor {
     private boolean isValidInput(String[] row) {
         if (row.length != 2) return false;
 
-        String firstRow = row[0];
+        String firstRow = row[1];
         if (NumberUtils.isDigits(firstRow)) {
             int value = NumberUtils.toInt(firstRow);
             return value >= 0 && value <= 10;

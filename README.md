@@ -19,12 +19,42 @@ This application uses Spring Boot framework with its command-line feature as wel
     * **PlayerProcessor**. Accepts the map from the **FileProcessor**, process the map in order to return Player list, which contains the player name and a list of frames. Each frame is ordered logically based in the rolls and the given rules.
     * **OutputProcessor**: Prepares the player list and returns the calculated score per frame and display values as well as it contains the method to parse the Output class into a printable String.
 
-## Usage
+## Getting Started
+
+### Prerequisites
+
+This project requires the following before using:
+
+- Java version 8 or higher
+- Maven 
+
+### Installation and usage
 
 The application follows the standard maven project structure and uses the maven commands in order to build a valid JAR file. 
 
 1. Run `mvn clean package`, generating a valid jar called `bowling-challenge.jar`.
-2. Run `java -jar bowling-challenge.jar -f sample.txt`, replacing the sample.txt with the absolute path (`/User/YourUser/bowling-challenge/src/test/resources/files/sample.txt`) to the sample text files. You can find all the sample files used to test under `src/test/resources/files`. 
+2. Run `java -jar target/bowling-challenge.jar -f sample.txt`, replacing the sample.txt with the absolute path (`/User/YourUser/bowling-challenge/src/test/resources/files/sample.txt`) to the sample text files. You can find all the sample files used to test under `src/test/resources/files`. 
+* Expects one arguments: `-f or --file`. You can use `-h or -help` for a brief explanation of the commands. 
+
+**Note: The text files must following the format given in the sample text files or as shown below**
+```
+Jeff	10
+Jeff	7
+Jeff	3
+Jeff	9
+Jeff	0
+Jeff	10
+Jeff	0
+Jeff	8
+Jeff	8
+Jeff	2
+Jeff	F
+Jeff	6
+Jeff	10
+Jeff	10
+Jeff	1
+Jeff	8
+``` 
 
 ### Example
 
@@ -40,3 +70,7 @@ Pinfalls                X       7       /       9       0               X       
 Score           20              39              48              66              74              84              90              120             148             167
 
 ```
+
+## Running the tests
+
+All the tests can be ran using `mvn test`, although it is done when `mvn package` is executed. Each test executes various positive and negative scenarios per each notable class. 

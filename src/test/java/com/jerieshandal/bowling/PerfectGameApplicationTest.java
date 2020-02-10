@@ -6,12 +6,12 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootTest(args = "-fsrc/test/resources/files/sample-perfect.txt")
-public class PerfectGameApplicationTest {
+class PerfectGameApplicationTest {
 
     @Autowired
     private ApplicationContext applicationContext;
 
     @Test
-    public void testRun() throws Exception {
+    void testRun() throws Exception {
     }
 }

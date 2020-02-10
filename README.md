@@ -1,7 +1,7 @@
 # Bowling Challenge
 
 Ten-pin bowling is a type of bowling in which a bowler rolls a bowling ball down a wood or synthetic lane toward ten pins positioned in a tetractys (equilateral triangle-based pattern) at the far end of the lane. 
-The objective is to knock down all ten pins on the first roll of the ball (a strike), or failing that, on the second roll (a spare).
+The objective is to knock down all ten pins on the first roll of the ball (a strike), or failing that, on the second roll (a spare). The purpose of this project is to print the score given a tab-delimited text file using a command line by following the restrictions from the game.
 
 ## Rules
 

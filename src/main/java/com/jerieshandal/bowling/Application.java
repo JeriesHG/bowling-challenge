@@ -9,7 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BowlingChallengeApplication implements CommandLineRunner {
+public class Application implements CommandLineRunner {
 
     @Autowired
     private Bowling bowling;
@@ -17,7 +17,7 @@ public class BowlingChallengeApplication implements CommandLineRunner {
     private CLIParser cliParser;
 
     public static void main(String[] args) {
-        SpringApplication.run(BowlingChallengeApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @Override

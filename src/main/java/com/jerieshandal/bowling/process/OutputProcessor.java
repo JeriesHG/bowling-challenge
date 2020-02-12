@@ -8,6 +8,4 @@ import java.util.List;
 public interface OutputProcessor {
 
     List<Output> produceOutputLines(List<Player> players);
-
-    String processOutputResult(List<Output> outputs);
 }

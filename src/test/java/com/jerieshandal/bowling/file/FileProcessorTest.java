@@ -2,6 +2,7 @@ package com.jerieshandal.bowling.file;
 
 import com.jerieshandal.bowling.TestApplicationConfiguration;
 import com.jerieshandal.bowling.pojo.Roll;
+import com.jerieshandal.bowling.util.Messages;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -22,6 +23,8 @@ class FileProcessorTest {
 
     @Autowired
     private FileProcessor fileProcessor;
+    @Autowired
+    private Messages messages;
 
     @Test
     void successFileProcessed() throws IOException {
@@ -55,7 +58,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 
@@ -66,7 +69,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 
@@ -77,7 +80,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 
@@ -88,7 +91,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 
@@ -99,7 +102,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 
@@ -110,7 +113,7 @@ class FileProcessorTest {
             fileProcessor.process(path.toAbsolutePath().toString());
             fail("Test must fail");
         } catch (IOException | IllegalArgumentException ex) {
-            assertEquals("There's an invalid entry in the file!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.entry"), ex.getMessage());
         }
     }
 }

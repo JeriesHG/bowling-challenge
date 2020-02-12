@@ -4,5 +4,5 @@ import java.io.IOException;
 
 public interface Bowling {
 
-    String processAndPrintScore(String filePath) throws IOException;
+    String processScore(String filePath) throws IOException;
 }

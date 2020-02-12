@@ -17,7 +17,8 @@ This application uses Spring Boot framework with its command-line feature as wel
  * **Bowling**: The objective of this class is to process a given file path and return the processed scored as String. It connects the following implementations: 
     * **FileProcessor**. Reads the file and returns a map with the player name as key and a list of rolls as the value.
     * **PlayerProcessor**. Accepts the map from the **FileProcessor**, process the map in order to return Player list, which contains the player name and a list of frames. Each frame is ordered logically based in the rolls and the given rules.
-    * **OutputProcessor**: Prepares the player list and returns the calculated score per frame and display values as well as it contains the method to parse the Output class into a printable String.
+    * **OutputProcessor**: Processes the player list to returns a list of *output*, which is the calculated score per frame and display values.
+    * **PrintProcessor**: Parses the Output class into a printable String.
 
 ## Getting Started
 

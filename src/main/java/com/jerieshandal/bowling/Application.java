@@ -24,6 +24,6 @@ public class Application implements CommandLineRunner {
     public void run(String... args) throws Exception {
         String filePath = cliParser.parse(args);
         if (StringUtils.isBlank(filePath)) return;
-        System.out.println(bowling.processAndPrintScore(filePath));
+        bowling.processScore(filePath);
     }
 }

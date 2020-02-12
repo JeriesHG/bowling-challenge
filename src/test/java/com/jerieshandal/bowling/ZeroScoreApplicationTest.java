@@ -8,9 +8,6 @@ import org.springframework.context.ApplicationContext;
 @SpringBootTest(args = "-fsrc/test/resources/files/sample-zero.txt")
 class ZeroScoreApplicationTest {
 
-    @Autowired
-    private ApplicationContext applicationContext;
-
     @Test
     void runTest() throws Exception {
     }

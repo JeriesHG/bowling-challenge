@@ -7,6 +7,7 @@ import com.jerieshandal.bowling.pojo.Player;
 import com.jerieshandal.bowling.pojo.Roll;
 import com.jerieshandal.bowling.process.OutputProcessor;
 import com.jerieshandal.bowling.process.PlayerProcessor;
+import com.jerieshandal.bowling.process.PrinterProcessor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -23,12 +24,14 @@ public class BowlingImpl implements Bowling {
     private PlayerProcessor playerProcessor;
     @Autowired
     private OutputProcessor outputProcessor;
+    @Autowired
+    private PrinterProcessor printer;
 
     @Override
-    public String processAndPrintScore(String filePath) throws IOException {
+    public String processScore(String filePath) throws IOException {
         Map<String, List<Roll>> processedFile = fileProcessor.process(filePath);
         List<Player> players = playerProcessor.retrievePlayers(processedFile);
         List<Output> outputs = outputProcessor.produceOutputLines(players);
-        return outputProcessor.processOutputResult(outputs);
+        return printer.print(outputs);
     }
 }

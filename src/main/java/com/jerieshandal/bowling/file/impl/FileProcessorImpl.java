@@ -2,7 +2,9 @@ package com.jerieshandal.bowling.file.impl;
 
 import com.jerieshandal.bowling.file.FileProcessor;
 import com.jerieshandal.bowling.pojo.Roll;
+import com.jerieshandal.bowling.util.Messages;
 import org.apache.commons.lang3.math.NumberUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -17,6 +19,9 @@ import java.util.stream.Stream;
 @Component
 public class FileProcessorImpl implements FileProcessor {
 
+    @Autowired
+    private Messages messages;
+
     @Override
     public Map<String, List<Roll>> process(File path) throws IOException {
         Map<String, List<Roll>> processedInput = new HashMap<>();
@@ -24,7 +29,7 @@ public class FileProcessorImpl implements FileProcessor {
         List<String> fileLines = Files.readAllLines(path.toPath());
         for (String line : fileLines) {
             String[] splitRows = line.split("\t");
-            if (!isValidInput(splitRows)) throw new IllegalArgumentException("There's an invalid entry in the file!");
+            if (!isValidInput(splitRows)) throw new IllegalArgumentException(messages.getMessage("error.files.entry"));
 
             String playerName = splitRows[0];
             List<Roll> playerRolls = processedInput.get(playerName);

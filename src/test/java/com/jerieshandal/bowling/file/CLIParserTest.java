@@ -1,6 +1,7 @@
 package com.jerieshandal.bowling.file;
 
 import com.jerieshandal.bowling.TestApplicationConfiguration;
+import com.jerieshandal.bowling.util.Messages;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.jupiter.api.Test;
@@ -19,6 +20,8 @@ class CLIParserTest {
 
     @Autowired
     private CLIParser cliParser;
+    @Autowired
+    private Messages messages;
 
     @Test
     void validFilePath() throws IOException, ParseException {
@@ -43,7 +46,7 @@ class CLIParserTest {
             cliParser.parse("");
             fail("Must fail!");
         } catch (IOException | ParseException | IllegalArgumentException ex) {
-            assertEquals("File path must be set!", ex.getMessage());
+            assertEquals(messages.getMessage("error.files.path"), ex.getMessage());
         }
     }
 }
